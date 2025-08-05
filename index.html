@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Свадебное приглашение</title>
+  <style>
+    body {
+      font-family: 'Ouvality Cyrillic', serif;
+      margin: 0;
+      padding: 0;
+      background: url('фон к.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+      text-shadow: 0 0 5px white;
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 60px 20px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+      background: none;
+      border: none;
+      margin: 0;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h1, h2, h3, p, label, div, time {
+      color: #222;
+      text-align: center;
+      text-shadow: 0 0 5px white;
+    }
+    .names {
+      font-size: 40px;
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      color: #222;
+      text-shadow: 0 0 5px white;
+    }
+    .date-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 20px;
+    }
+    .date-block div {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    .date-block .day {
+      font-size: 40px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 8px;
+      color: #222;
+      text-shadow: none;
+    }
+    .submit-button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 30px;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 18px;
+      text-shadow: none;
+      transition: background 0.3s;
+    }
+    .submit-button:hover {
+      background: #333;
+    }
+    .timeline {
+      margin-top: 30px;
+      padding-left: 20px;
+      border-left: 2px solid #222;
+    }
+    .timeline-item {
+      margin-bottom: 30px;
+    }
+    .timeline-item time {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .timeline-item div {
+      margin-top: 5px;
+    }
+    .radio-group {
+      margin-top: 20px;
+    }
+    .radio-group label {
+      display: block;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .radio-group input[type="radio"] {
+      margin-right: 10px;
+    }
+    .icon {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .color-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      gap: 0;
+    }
+    .color-dots div {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      border: 2px solid #fff;
+    }
+    .color-dots div:not(:first-child) {
+      margin-left: -20px;
+    }
+    .form-message {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      display: none;
+      font-weight: bold;
+      animation: fadeIn 0.5s;
+    }
+    .success {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    .error {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML content remains unchanged -->
+</body>
+</html>
